@@ -1,4 +1,4 @@
-# Graph Diffusion Bridges
+# Graph Bridge Diffusion
 
 Repository is based on [DeFoG](https://github.com/manuelmlmadeira/DeFoG/).
 
