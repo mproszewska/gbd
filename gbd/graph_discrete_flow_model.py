@@ -1154,6 +1154,7 @@ class GraphDiscreteFlowModel(pl.LightningModule):
             )
         else:
             current_epoch = self.current_epoch
+        os.makedirs(os.path.join(os.getcwd(), "denovo_eval"), exist_ok=True)
         filename = os.path.join(
             os.getcwd(), "denovo_eval", f"defog_epoch{current_epoch}.txt"
         )
