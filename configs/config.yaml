@@ -1,0 +1,13 @@
+defaults:
+    - _self_
+    - general : general_default
+    - model : discrete
+    - train : train_default
+    - dataset : qm9
+    - sample : sample_default
+
+hydra:
+  job:
+    chdir: True
+  run:
+    dir: saved/${model.keep_scaffold_fixed}-${model.skip_scaffold_prob}-${model.sample_fragments_prob}/${dataset.name}-${general.name}-${now:%Y-%m-%d}-${now:%H-%M-%S}

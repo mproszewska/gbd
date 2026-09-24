@@ -1,0 +1,8 @@
+name: 'molgenbench'            # molgenbench
+datadir: 'data/molgenbench/molgenbench_pyg/'
+remove_h: True
+remove_aromatic: True
+random_subset: null
+pin_memory: False
+compute_fcd: False                 # Compute FCD scores
+skip_no_scaffold: True
